@@ -1,0 +1,18 @@
+.emptyList {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-top: solid 1px var(--gray-400);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+    gap: 1rem;
+}
+
+.emptyList p {
+    display: flex;
+    flex-direction: column;
+    color: var(--gray-300);
+    line-height: 140%;
+}

@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header aside {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: bold;   
+    font-size: 0.875rem;
+}
+
+.createdtasks {
+    color: var(--blue);
+    
+}
+
+.concludedTasks {
+    color: var(--purple);
+}
+
+.header span {
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    font-size: 0.75rem;
+    border-radius: 16px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
