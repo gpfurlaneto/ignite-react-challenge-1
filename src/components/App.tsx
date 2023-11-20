@@ -78,7 +78,7 @@ function App() {
           {tasks.length ? (
             <div>
               {tasks.map(task => (
-                  <TaskListItem task={task} handleRemoveTask={handleRemoveTask} handleConfirmTask={handleConfirmTask}/>
+                  <TaskListItem key={task.id} task={task} handleRemoveTask={handleRemoveTask} handleConfirmTask={handleConfirmTask}/>
                 )
               )}
             </div>
