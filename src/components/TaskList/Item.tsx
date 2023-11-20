@@ -17,22 +17,22 @@ export function Item({ task, handleRemoveTask, handleConfirmTask }: ItemProps) {
     ? styles['paragraph-checked']
     : ''
     
-    return (
-      <div className={styles.item}>
-        <div>
-          <label htmlFor="checkbox" onClick={() => handleConfirmTask(task.id, !task.isChecked)}>
-            <input readOnly type="checkbox" checked={false} />
-            <span className={`${styles.checkbox} ${checkboxCheckedClassname}`}>
-              {task.isChecked && <Check size={12} />}
-            </span>
-            <p className={`${styles.paragraph} ${paragraphCheckedClassname}`}>
-              {task.description}
-            </p>
-          </label>
-        </div>
-        <button onClick={() => handleRemoveTask(task.id)}>
-          <Trash size={16} color="#808080" />
-        </button>
+  return (
+    <div className={styles.item}>
+      <div>
+        <label htmlFor="checkbox" onClick={() => handleConfirmTask(task.id, !task.isChecked)}>
+          <input readOnly type="checkbox" checked={false} />
+          <span className={`${styles.checkbox} ${checkboxCheckedClassname}`}>
+            {task.isChecked && <Check size={12} />}
+          </span>
+          <p className={`${styles.paragraph} ${paragraphCheckedClassname}`}>
+            {task.description}
+          </p>
+        </label>
+      </div>
+      <button onClick={() => handleRemoveTask(task.id)}>
+        <Trash size={16} color="#808080" />
+      </button>
     </div>
-    )
+  )
 }
